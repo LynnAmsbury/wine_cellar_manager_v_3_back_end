@@ -11,6 +11,17 @@ class WinesController < ApplicationController
     render json: @wine
   end
 
+  def create
+    @wine = Wine.create(
+      variety: params[:variety],
+      producer: params[:producer],
+      region: params[:region],
+      vintage: params[:vintage],
+      notes: params[:notes]
+    )
+    render json: @wine
+  end
+
   private
 
   def find_wine
