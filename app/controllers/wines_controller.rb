@@ -1,6 +1,6 @@
 class WinesController < ApplicationController
 
-  before_action :find_wine, only: [:show, :destroy]
+  before_action :find_wine, only: [:show, :update, :destroy]
 
   def index
     @wines = Wine.all
@@ -13,6 +13,11 @@ class WinesController < ApplicationController
 
   def create
     @wine = Wine.create(wine_params)
+    render json: @wine
+  end
+
+  def update
+    @wine.update(wine_params)
     render json: @wine
   end
 
