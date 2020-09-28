@@ -1,0 +1,2 @@
+class UpdateCollectionsController < ApplicationController
+end
