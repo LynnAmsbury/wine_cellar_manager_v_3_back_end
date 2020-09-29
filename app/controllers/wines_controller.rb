@@ -31,7 +31,11 @@ class WinesController < ApplicationController
     @wine = Wine.find(params[:id])
   end
 
-  def wine_params
+#   def wine_params
+#     params.require(:wine).permit(:variety, :producer, :region, :vintage, :notes)
+#   end
+
+def wine_params
     params.require(:wine).permit(:variety, :producer, :region, :vintage, :notes)
   end
 
