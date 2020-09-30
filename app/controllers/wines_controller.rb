@@ -12,8 +12,15 @@ class WinesController < ApplicationController
   end
 
   def create
-    @wine = Wine.create(wine_params)
-    render json: @wine
+    @wine = Wine.new(wine_params)
+
+    if @wine.valid?
+      @wine.save
+      render json: @wine
+    else
+      render json: { errors: @wine.errors.full_messages }, status: :unprocessable_entity
+    end
+
   end
 
   def update
@@ -30,10 +37,6 @@ class WinesController < ApplicationController
   def find_wine
     @wine = Wine.find(params[:id])
   end
-
-#   def wine_params
-#     params.require(:wine).permit(:variety, :producer, :region, :vintage, :notes)
-#   end
 
 def wine_params
     params.require(:wine).permit(:variety, :producer, :region, :vintage, :notes)
