@@ -19,7 +19,7 @@ The Wine Cellar Manager (version 3) is a full-stack application made with Ruby o
 
 ## Intro Video
 
-Coming soon!
+[Mod 3 Flatiron Project by Lynn Amsbury](https://youtu.be/DXScphh6gBU)
 
 ## Technologies
 
@@ -31,6 +31,7 @@ Coming soon!
 
 To run this project, clone the GitHub repository, install it locally, cd into wine_cellar_manager_backend, and type:
 ```bundle install```into your terminal. Next run ```bundle install```, then ```rails db:create```, and ```rails db:seed```. Finally, run ```rails s -p3000``` to start the backend server.
+
 Next, open a new terminal window, cd into wine-cellar-manager-v-3-front-end, and type
 ```lite-server -p3001```into the terminal. If you do not have lite-server installed you will need to install it.
 
