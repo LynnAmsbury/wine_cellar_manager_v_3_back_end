@@ -1,24 +1,62 @@
-# README
+# Wine Cellar Manager version 3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of Contents
 
-Things you may want to cover:
+[](#)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Intro Video](#intro-video)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Features](#features)
+  - [Status](#status)
+  - [Inspiration](#inspiration)
+  - [Contact](#contact)
 
-* Ruby version
+## General Info
 
-* System dependencies
+The Wine Cellar Manager (version 3) is a full-stack application made with Ruby on Rails, HTML, CSS, and vanilla Javascript that allows users to add wines to a collection, view the wines in the collection, update wine information, and remove wines from the collection. This repository contains code for the back end; there is a separate front-end repository that will need to be run for full functionality: <https://github.com/LynnAmsbury/wine-cellar-manager-v-3-front-end>.
 
-* Configuration
+## Intro Video
 
-* Database creation
+Coming soon!
 
-* Database initialization
+## Technologies
 
-* How to run the test suite
+* Ruby - version 2.6.1
+* Rails - 6.0.3.3
+* SQLite3 - version 3.28.0
 
-* Services (job queues, cache servers, search engines, etc.)
+## Setup
 
-* Deployment instructions
+To run this project, clone the GitHub repository, install it locally, cd into recipe_api, and type:
+```bundle install```into your terminal. Next run ```bundle install```, then ```rails db:create```, and ```rails db:seed```. Finally, run ```rails s -p3000``` to start the backend server.
+Next, open a new terminal window and cd into wine-cellar-manager-v-3-front-end and type
+```lite-server -p3001```into the terminal. If you do not have lite-server installed you will need to install it.
 
-* ...
+## Features
+
+* Allows users to add new wines to their collection
+* Allows users to view the wines in their collection
+* Allows users to update wines
+* Allows users to delete wines
+
+## To-Do List
+
+* Refactor “code smell”
+* Improve styling
+* Include user-login functionality
+
+## Status
+
+Project is finished with option to expand functionality, improve styling, and DRY out code.
+
+## Inspiration
+
+I have been unable to fine wine collection management software that I love, so I thought I'd start learning to code my own.
+
+## Contact
+
+Created by [Lynn Amsbury](https://www.linkedin.com/in/lynnamsbury/)
+
+Feel free to contact me!

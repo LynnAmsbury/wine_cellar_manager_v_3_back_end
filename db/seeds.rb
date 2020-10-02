@@ -4,7 +4,7 @@ User.destroy_all
 
 jpv08insig = Wine.create({ variety: "Blend", producer: "Joseph Phelps Vineyards", region: "Napa Valley", vintage: 2008, notes: "Insignia" })
 jpv08backus = Wine.create({ variety: "Cabernet Sauvignon", producer: "Joseph Phelps Vineyards", region: "Napa Valley", vintage: 2008, notes: "Backus Vineyard" })
-dv03merlot = Wine.create({ variety: "Merlot", producer: "Duckhorn Vineyards", region: "Napa Valley", vintage: 2003 })
+dv03merlot = Wine.create({ variety: "Merlot", producer: "Duckhorn Vineyards", region: "Napa Valley", vintage: 2003, notes: ""})
 
 lynn = User.create(name: "Lynn", username: "lynn123", password: "LynnsPassword", email: "Lynn@mail.com")
 matt = User.create(name: "Matt", username: "matt456", password: "MattsPassword", email: "Matt@mail.com")
